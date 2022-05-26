@@ -14,3 +14,12 @@ Movie.create(title: "Ocean's Eight", overview: "Debbie Ocean, a criminal masterm
 
 p Movie.first
 p Movie.count
+
+List.destroy_all
+
+List.create(name: 'Drama')
+List.create(name: 'Comedy')
+List.create(name: 'Favorites')
+
+p List.first
+p List.count
