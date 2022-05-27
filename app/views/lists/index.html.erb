@@ -1,7 +1,11 @@
 <h1>My lists</h1>
+<%= link_to "Create a new list", new_list_path%>
 
 <ul>
   <% @lists.each do |list| %>
-  <li><%= link_to list.name, list_path(list)%></li>
+  <li>
+  <%=cl_image_tag("cld-sample", width: 400, height: 300, crop: :fill)%>
+  <%= link_to list.name, list_path(list)%>
+  </li>
   <% end %>
 </ul>
