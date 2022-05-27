@@ -16,10 +16,3 @@ p Movie.first
 p Movie.count
 
 List.destroy_all
-
-List.create(name: 'Drama')
-List.create(name: 'Comedy')
-List.create(name: 'Favorites')
-
-p List.first
-p List.count
